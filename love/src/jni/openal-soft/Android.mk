@@ -22,15 +22,15 @@ else ifeq ($(TARGET_ARCH_ABI),arm64-v8a)
 		-DHAVE_STRTOF \
 		-DSIZEOF_LONG=8 \
 		-DHAVE_PTHREAD_MUTEX_TIMEDLOCK
-else ifeq ($(TARGET_ARCH_ABI),x86)
-	# Defines for x86. UNTESTED!
-	LOCAL_CFLAGS += \
-		-DHAVE_SSE \
-		-DHAVE_SSE2 \
-		-DHAVE_SSE3 \
-		-DSIZEOF_LONG=4 \
-		-DHAVE_CPUID_H \
-		-DHAVE_GCC_GET_CPUID \
+#else ifeq ($(TARGET_ARCH_ABI),x86)
+#	# Defines for x86. UNTESTED!
+#	LOCAL_CFLAGS += \
+#		-DHAVE_SSE \
+#		-DHAVE_SSE2 \
+#		-DHAVE_SSE3 \
+#		-DSIZEOF_LONG=4 \
+#		-DHAVE_CPUID_H \
+#		-DHAVE_GCC_GET_CPUID \
 else ifeq ($(TARGET_ARCH_ABI),x86_64)
 	# Defines for x86-64. UNTESTED!
 	LOCAL_CFLAGS += \

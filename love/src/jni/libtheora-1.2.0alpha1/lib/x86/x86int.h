@@ -14,7 +14,7 @@
     last mod: $Id$
 
  ********************************************************************/
-
+#undef OC_X86_ASM
 #if !defined(_x86_x86int_H)
 # define _x86_x86int_H (1)
 # include "../internal.h"
